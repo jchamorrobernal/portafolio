@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javier Chamorro Bernal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1 onclick="location.href = 'index.html'">Javier Chamorro Bernal</h1> 
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sobremi.html">Sobre mí</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <section class="presentacion">
+        <article class="textosIntro">
+            <h2 class="tituloIntro">¡Hola, bienvenido!</h2>
+            <p class="textoIntro" >Soy diseñador UX y Periodista. Me especializo en la creación de productos digitales y me encanta la investigación. ¡Te invito a conocer mis proyectos! </p>
+        </article>
+        <img class="retrato" src="../media/javierchamorro.png" alt="">      
+    </section>
+    
+    <main class="proyectos">
+        <h3>Proyectos
+        </h3>
+        <section class="proyectosCajas">
+            <article class="caja">
+                <img class="imagenProyecto" src="./media/logo mesalista.jpg" alt="">
+                <div class="contenidoTexto">
+                    <h4>MesaLista</h4>
+                    <p>Aplicación creada para Android en el curso de UX/UI de CoderHouse</p>
+                    <button class="botonCaja" onclick="location.href = 'mesalista.html'">Ver Proyecto</button>
+                </div>
+            </article>
+
+            <article class="caja">
+                <img class="imagenProyecto" src="./media/logo eventuras.jpg" alt="">
+                <div class="contenidoTexto">
+                    <h4>Eventuras</h4>
+                    <p>Rediseño e implementación del sitio web de la Fundación Eventuras</p>
+                    <button class="botonCaja" onclick="location.href = 'eventuras.html'">Ver Proyecto</button>
+                </div>
+            </article>
+
+            <article class="caja">
+                <img class="imagenProyecto" src="./media/logo samnda.jpg" alt="">
+                <div class="contenidoTexto">
+                    <h4>Samda</h4>
+                    <p>Propuesta de sitio mobile para emprendimiento de artesanía</p>
+                    <button class="botonCaja" onclick="location.href = 'samnda.html'">Ver Proyecto</button>
+                </div>
+            </article>
+        </section>
+    <div class="whatsapp"></div>
+    </main>
+    <footer>
+      <section class="textoFooter">
+        <p>Información de contacto</p>
+        <p>Mail: jchamorrobernal@gmail.com</p>
+        <p>Teléfono: +56995101834</p>
+      </section>
+      <section class="iconosRedes"> 
+        <a href="https://www.linkedin.com/in/javier-chamorro-bernal/" target="_blank"><img class="iconoRed" src="./media/logos social media/linkedin.png" alt=""></a>
+        <a href="https://github.com/jchamorrobernal" target="_blank"><img class="iconoRed" id="github" src="./media/logos social media/github.png" alt=""></a>
+        <a href="https://www.behance.net/javierchamorro" target="_blank"><img class="iconoRed" src="./media/logos social media/behance.png" alt=""></a> 
+      </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+</body>
+</html>
