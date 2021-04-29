@@ -180,25 +180,27 @@ li {
     width: 90%;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-self: center;
 }
 
 .proyecto__titulo {
     font-size: $tamañoTitulos;
     color: $colorPrincipal;
+    align-self: center;
 }
 
 .proyecto__subtitulo {
-
-}
-
-.proyecto__parrafo {
-
+    color: $colorPrincipal;
 }
 
 .proyecto__parrafo--enlace {
     text-decoration: none;
     color: $colorPrincipal;
+}
+
+.slider {
+    width: 80%;
+    align-self: center;
 }
 /*Footer */
 
@@ -243,35 +245,3 @@ margin: 20px;
     }
 }
 
-/* Prueba de Mixin */
-@mixin cuadrado ($fondo, $ancho:200px) {
-    background-color: $fondo;
-    width: $ancho;
-    height: 200px;
-    margin-top: 5px;
-    padding: 10px;
-}
-
-.main__cuadrado-1 {
-    @include cuadrado (#864826, 300px)
-}
-
-.main__cuadrado-2 {
-    @include cuadrado (#1a1a1a,)
-}
-
-.main__cuadrado-3 {
-    @include cuadrado ($colorPrincipal, $pruebaMixin)
-}
-
-.main__prueba {
-    border: 6px black solid;
-    @if $alto-div==200px {
-        background-color: aqua;
-    } @else if $alto-div==50px{
-        width: $ancho-div;
-    }
-    @else {
-        background-color:chartreuse;
-    }
-}
