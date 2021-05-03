@@ -68,8 +68,10 @@ li {
 }
 
 .tituloIntro {
+    color: $colorPrincipal;
     font-size: 70px;
     margin: 20px 20px 20px 40px;
+    
 }
 
 .textoIntro {
@@ -83,6 +85,10 @@ li {
     height: 400px;
     background-repeat: no-repeat;
 
+}
+.titulo_proyectos {
+    color: $colorPrincipal;
+    font-size: $tamañoTitulos;
 }
 .proyectos {
     display: flex;
