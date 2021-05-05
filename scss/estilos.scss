@@ -1,7 +1,4 @@
 @import "_variables";
-@import "_fuentes";
-@import "_main";
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap');
 
 * {
@@ -48,6 +45,9 @@ li {
     background-color: $colorPrincipal;
 }
 
+#nava {
+    color: white;
+}
 /* Main */
 
 .presentacion {
@@ -61,6 +61,7 @@ li {
     border-radius: 20px;
     margin: 30px;
     border: 2px solid $colorPrincipal;
+    height: 400px;
 }
 .textosIntro {
     color: #1a1a1a;

@@ -37,13 +37,13 @@
 
     </header>
 
-    <form action="recibe.html" method="POST">
+    <form action="mensaje.php" method="GET">
         <h3>Formulario de contacto</h3>
-        <input type="text" name="campo_nombre" placeholder="Ingresa tu nombre acá..."><br>
-        <input type="email" name="campo_email" placeholder="email" autocomplete="off"><br>
-        <input type="telefono" name="campo_telefono" placeholder="teléfono"><br>
+        <input type="text" name="campoNombre" placeholder="Ingresa tu nombre acá..."><br>
+        <input type="text" name="campoEmail" placeholder="email" autocomplete="off"><br>
+        <input type="text" name="campoEelefono" placeholder="teléfono"><br>
         <label for="text_area">Mensaje</label><br>
-        <textarea name="campo_area" id="" cols="40" rows="10"></textarea><br>
+        <textarea type="text" name="campoMensaje" id="" cols="40" rows="10"></textarea><br>
         <input type="submit" name="enviar" value="enviar formulario">
         <input type="reset" name="resetear">
 
