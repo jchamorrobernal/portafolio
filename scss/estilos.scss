@@ -12,7 +12,9 @@ body {
 }
 
 /* Header */
-
+header {
+    display: flex;
+}
 h1 {
     color: #00e3c5;
     text-transform: capitalize;
@@ -21,14 +23,18 @@ h1 {
     margin: 20px 20px;
     text-align: center;
     font-weight: 700;
-    font-size: 90px;
-    
+    font-size: 70px;
+    width: 70%;
+}
+
+#navbar {
+    width: 50%;
 }
 
 ul {
     background-color: $colorPrincipal;
     font-style: bold;
-    padding: 10px 30px;
+    padding: 0px 0px;
     width: 100%;
     font-weight: 500;
     display: flex;
@@ -38,7 +44,7 @@ ul {
 li {
     color: #ffffff;
     font-weight: 500;
-    padding: 20px;
+    padding: 10px 5px; 
 }
 
 .navbar-toggler {
@@ -71,13 +77,13 @@ li {
 
 .tituloIntro {
     color: $colorPrincipal;
-    font-size: 70px;
+    font-size: 40px;
     margin: 20px 20px 20px 40px;
     
 }
 
 .textoIntro {
-    font-size: 40px;
+    font-size: 20px;
     margin: 20px 20px 20px 40px;
 }
 
@@ -174,7 +180,7 @@ li {
 
 .sobreMi__parrafo {
     width: 95%;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .sobreMi__parrafo--item {
@@ -210,6 +216,23 @@ li {
     width: 80%;
     align-self: center;
 }
+
+/*Contacto*/
+
+.parrafo_Contacto {
+    align-self: center;
+}
+
+.main_contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.tarjetacontacto {
+    width: 100%;
+}
 /*Footer */
 
 footer {
@@ -231,7 +254,15 @@ margin: 20px;
     width: 45px;
     margin: 10px;
 }
-
+@media all and (max-width: 1000px) {
+    .main_contacto {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        align-self: center;
+    }
+}
 @media all and (max-width: 576px) {
     h1 {
         font-size: 40px;
